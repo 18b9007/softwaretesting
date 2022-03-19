@@ -7,26 +7,24 @@ A simple calculator application with addition, subtraction, multiplication and d
 <h3>test_calc.py</h3>
 The test file testing the each of the aforementioned units.
 The values in the code is correct and the successful test output would be as follows:
-<table>
-    <tr>
-        <td>....
-          <br>----------------------------------------------------------------------
-          <br>Ran 4 tests in 0.003s
-          <br>OK
-        </td>
-    </tr>
-</table>
+
+```
+Ran 4 tests in 0.003s
+OK
+```
+
 If a value is changed in test_calc.py or operation modified in calc.py, a failed test output would be shown.
 E.g. changing the multiplication operation in calc.py from x * y to x ** y:
-<table>
-    <tr>
-        <td>AssertionError: 100000 != 50
-            <br>----------------------------------------------------------------------
-             <br>Ran 4 tests in 0.003s
-             <br>FAILED (failures=1)
-        </td>
-    </tr>
-</table>
+
+```
+AssertionError: 100000 != 50
+----------------------------------------------------------------------
+
+Ran 4 tests in 0.003s
+FAILED (failures=1)
+```
+
+The failure refers to an assertion error as the calculated x ** y value (100000) is not equal to the expected value 50 (which is obtainable by x * y operation)
 
 <h3>employee.py</h3>
 An application for creating employee instances and methods to return the employee's email, fullname, and to get the raise amount.
@@ -34,3 +32,29 @@ mock was introduced to the code to mock the website data to ensure that the pass
 
 <h3>test_employee.py</h3>
 The test file testing the each of the aforementioned units.
+The values in the code is correct and the successful test output would be as follows:
+
+```
+....setupClass
+setUp
+test_apply_raise
+tearDown
+
+setUp
+test_email
+tearDown
+
+setUp
+test_fullname
+tearDown
+
+setUp
+tearDown
+
+teardownClass
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK
+```
