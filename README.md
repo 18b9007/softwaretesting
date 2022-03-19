@@ -7,8 +7,3 @@ A simple calculator application with addition, subtraction, multiplication and d
 <h3>test_calc.py</h3>
 The test file testing the each of the aforementioned units.
 The values in the code is correct and the successful test output would be as follows:
-```....
-----------------------------------------------------------------------
-Ran 4 tests in 0.003s
-
-OK```
