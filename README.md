@@ -1,2 +1,3 @@
-# Unit Testing / Integration Testing Code Assignment
-To perform all coding exercises demonstrated by the given Software Testing video: https://www.youtube.com/watch?v=Geq60OVyBPg
+# Software Testing Assignment
+To understand and perform the code examples as demonstrated in given video.
+<p>Python Tutorial: Unit Testing Your Code with the unittest Module -> https://www.youtube.com/watch?v=6tNS--WetLI</p>
