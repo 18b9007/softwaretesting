@@ -34,6 +34,7 @@ mock was introduced to the code to mock the website data to ensure that the pass
 The test file testing the each of the aforementioned units.
 The values in the code is correct and the successful test output would be as follows:
 
+
 ```
 ....setupClass
 setUp
@@ -58,3 +59,19 @@ Ran 4 tests in 0.002s
 
 OK
 ```
+
+Example of a failed test output by changing the last name of emp_2 in test_fullname() from 'Sue Smith' to 'Sue Jane':
+```
+AssertionError: 'Sue Smith' != 'Sue Jane'
+- Sue Smith
++ Sue Jane
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=1)
+```
+
+<h4>Introducing setUp and tearDown methods and class methods</h4>
+In the initial test_employee.py, employee instances were created in each test (repetitive). This was improved using the setUp and tearDown methods, where setUp helped create employee instances before each test.
+<br><br>This was further optimized with the class methods which would only occur once at the beginning (and at the end for tearDown) of the whole testing. The optimized code also includes mock patch within which we pass what is to be mocked.
